@@ -1,0 +1,16 @@
+button {
+    border:0 none;
+    outline: 0;
+    padding:0;
+    margin:0;
+    background:transparent;
+    *overflow:visible;
+    cursor:pointer;
+}
+h1{
+    color: pink;
+}
+div{
+    text-align: center;
+}
+button::-moz-focus-inner {border:0;padding:0;}

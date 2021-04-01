@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>PINKWHALE</title>
+</head>
+<body>
+    <h1>PINKWHALE</h1>
+    <div>
+        <button id="button" onclick="onhit()"><img src="anigif.gif" alt="pinkpink"></button>
+    </div>
+
+    <script>
+        function onhit(){
+            document.getElementById("button").src = "sadwhale.png";
+            sleep(1000);
+            document.getElementById("button").src = "anigif.gif";
+        }
+        function sleep(num){
+            var now = new Date();
+            var stop = now.getTime() + num;
+
+            while(true){
+                now = new Date();
+                if(now.getTime() > stop)return;
+            }
+        }
+    </script>
+</body>
+</html>
